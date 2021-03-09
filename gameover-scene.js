@@ -38,7 +38,6 @@ var GameOverScene = new Phaser.Class({
             this.returnKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.ENTER);
             this.returnKey.on("down", () => {
                 this.scene.start("MainScene", { username: this.player.username, score: 0, location: this.player.location });
-                console.log(this)
             }, this);
 
         } catch (e) {
